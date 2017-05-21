@@ -1394,3 +1394,18 @@
 	"Remote Quest.OnStageSet":
 		body: "Event Quest.OnStageSet(Quest akSender, int auiStageID, int auiItemID)\n\t${0}\nEndEvent"
 		prefix: "onstageset-REM"
+	"Event ScriptObject.OnKeyDown":
+		body: "Event OnKeyDown(int keyCode)\n\t${0}\nEndEvent"
+		prefix: "onkeydown"
+	"Event ScriptObject.OnKeyUp":
+		body: "Event OnKeyUp(int keyCode, float time)\n\t${0}\nEndEvent"
+		prefix: "onkeyup"
+	"Event ScriptObject.OnControlDown":
+		body: "Event OnControlDown(string control)\n\t${0}\nEndEvent"
+		prefix: "oncontroldown"
+	"Event ScriptObject.OnControlUp":
+		body: "Event OnControlUp(string control, float time)\n\t${0}\nEndEvent"
+		prefix: "oncontrolup"
+	"Event ScriptObject.OnPlayerCameraState":
+		body: "Event OnPlayerCameraState(int oldState, int newState)\n\t${0}\nEndEvent"
+		prefix: "onplayercamerastate"

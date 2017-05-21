@@ -2921,3 +2921,480 @@
 	"GlobalVariable.getvalue":
 		prefix: "getvalue"
 		body: "GetValue()${0}"
+	"UI.Set":
+		prefix: "set"
+		body: "UI.Set(${1:string menu}, ${2:string path}, ${3:var arg})${0}"
+	"UI.Get":
+		prefix: "get"
+		body: "UI.Get(${1:string menu}, ${2:string path})${0}"
+	"UI.Invoke":
+		prefix: "invoke"
+		body: "UI.Invoke(${1:string menu}, ${2:string path}, ${3:var[] args = None})${0}"
+	"UI.Load":
+		prefix: "load"
+		body: "UI.Load(${1:string menu}, ${2:string sourceVar}, ${3:string assetPath}, ${4:ScriptObject receiver = None}, ${5:string callback = \\\"\\\"})${0}"
+	"Weapon.GetEmbeddedMod":
+		prefix: "getembeddedmod"
+		body: "GetEmbeddedMod()${0}"
+	"Weapon.SetEmbeddedMod":
+		prefix: "setembeddedmod"
+		body: "SetEmbeddedMod(${1:ObjectMod mod})${0}"
+	"Weapon.GetInstanceOwner":
+		prefix: "getinstanceowner"
+		body: "GetInstanceOwner()${0}"
+	"WaterType.GetConsumeSpell":
+		prefix: "getconsumespell"
+		body: "GetConsumeSpell()${0}"
+	"WaterType.SetConsumeSpell":
+		prefix: "setconsumespell"
+		body: "SetConsumeSpell(${1:Spell sp})${0}"
+	"WaterType.GetContactSpell":
+		prefix: "getcontactspell"
+		body: "GetContactSpell()${0}"
+	"WaterType.SetContactSpell":
+		prefix: "setcontactspell"
+		body: "SetContactSpell(${1:Spell sp})${0}"
+	"Utility.VarToVarArray":
+		prefix: "vartovararray"
+		body: "Utility.VarToVarArray(${1:Var v})${0}"
+	"Utility.VarArrayToVar":
+		prefix: "vararraytovar"
+		body: "Utility.VarArrayToVar(${1:Var[] v})${0}"
+	"ScriptObject.RegisterForKey":
+		prefix: "registerforkey"
+		body: "RegisterForKey(${1:int key})${0}"
+	"ScriptObject.UnregisterForKey":
+		prefix: "unregisterforkey"
+		body: "UnregisterForKey(${1:int key})${0}"
+	"ScriptObject.RegisterForControl":
+		prefix: "registerforcontrol"
+		body: "RegisterForControl(${1:string control})${0}"
+	"ScriptObject.UnregisterForControl":
+		prefix: "unregisterforcontrol"
+		body: "UnregisterForControl(${1:string control})${0}"
+	"ScriptObject.RegisterForExternalEvent":
+		prefix: "registerforexternalevent"
+		body: "RegisterForExternalEvent(${1:string eventName, string callback})${0}"
+	"ScriptObject.UnregisterForExternalEvent":
+		prefix: "unregisterforexternalevent"
+		body: "UnregisterForExternalEvent(${1:string eventName})${0}"
+	"ScriptObject.RegisterForCameraState":
+		prefix: "registerforcamerastate"
+		body: "RegisterForCameraState()${0}"
+	"ScriptObject.UnregisterForCameraState":
+		prefix: "unregisterforcamerastate"
+		body: "UnregisterForCameraState()${0}"
+	"Perk.IsPlayable":
+		prefix: "isplayable"
+		body: "IsPlayable()${0}"
+	"Perk.IsHidden":
+		prefix: "ishidden"
+		body: "IsHidden()${0}"
+	"Perk.GetLevel":
+		prefix: "getlevel"
+		body: "GetLevel()${0}"
+	"Perk.GetNumRanks":
+		prefix: "getnumranks"
+		body: "GetNumRanks()${0}"
+	"Perk.GetNextPerk":
+		prefix: "getnextperk"
+		body: "GetNextPerk()${0}"
+	"Perk.GetSWFPath":
+		prefix: "getswfpath"
+		body: "GetSWFPath()${0}"
+	"Perk.IsEligible":
+		prefix: "iseligible"
+		body: "IsEligible(${1:Actor akActor})${0}"
+	"ObjectReference.GetAllMods":
+		prefix: "getallmods"
+		body: "GetAllMods()${0}"
+	"ObjectReference.GetConnectedObjects":
+		prefix: "getconnectedobjects"
+		body: "GetConnectedObjects()${0}"
+	"ObjectReference.AttachWire":
+		prefix: "attachwire"
+		body: "AttachWire(${1:ObjectReference akRef}, ${2:Form spline = None})${0}"
+	"ObjectReference.CreateWire":
+		prefix: "createwire"
+		body: "CreateWire(${1:ObjectReference akRef}, ${2:Form spline = None})${0}"
+	"ObjectReference.Scrap":
+		prefix: "scrap"
+		body: "Scrap()${0}"
+	"ObjectReference.GetDisplayName":
+		prefix: "getdisplayname"
+		body: "GetDisplayName()${0}"
+	"ObjectMod.GetPropertyModifiers":
+		prefix: "getpropertymodifiers"
+		body: "GetPropertyModifiers()${0}"
+	"ObjectMod.GetMaxRank":
+		prefix: "getmaxrank"
+		body: "GetMaxRank()${0}"
+	"ObjectMod.SetMaxRank":
+		prefix: "setmaxrank"
+		body: "SetMaxRank(${1:int rank})${0}"
+	"ObjectMod.GetPriority":
+		prefix: "getpriority"
+		body: "GetPriority()${0}"
+	"ObjectMod.SetPriority":
+		prefix: "setpriority"
+		body: "SetPriority(${1:int priority})${0}"
+	"ObjectMod.GetLooseMod":
+		prefix: "getloosemod"
+		body: "GetLooseMod()${0}"
+	"Math.LeftShift":
+		prefix: "leftshift"
+		body: "Math.LeftShift(${1:int value}, ${2:int shiftBy})${0}"
+	"Math.RightShift":
+		prefix: "rightshift"
+		body: "Math.RightShift(${1:int value}, ${2:int shiftBy})${0}"
+	"Math.LogicalAnd":
+		prefix: "logicaland"
+		body: "Math.LogicalAnd(${1:int arg1}, ${2:int arg2})${0}"
+	"Math.LogicalOr":
+		prefix: "logicalor"
+		body: "Math.LogicalOr(${1:int arg1}, ${2:int arg2})${0}"
+	"Math.LogicalXor":
+		prefix: "logicalxor"
+		body: "Math.LogicalXor(${1:int arg1}, ${2:int arg2})${0}"
+	"Math.LogicalNot":
+		prefix: "logicalnot"
+		body: "Math.LogicalNot(${1:int arg1})${0}"
+	"Math.Log":
+		prefix: "log"
+		body: "Math.Log(${1:float arg1})${0}"
+	"Location.GetParent":
+		prefix: "getparent"
+		body: "GetParent()${0}"
+	"Location.GetEncounterZone":
+		prefix: "getencounterzone"
+		body: "GetEncounterZone(${1:bool recursive = false})${0}"
+	"Location.SetEncounterZone":
+		prefix: "setencounterzone"
+		body: "SetEncounterZone(${1:EncounterZone ez})${0}"
+	"InstanceData.GetAttackDamage":
+		prefix: "getattackdamage"
+		body: "GetAttackDamage(${1:Owner akOwner})${0}"
+	"InstanceData.SetAttackDamage":
+		prefix: "setattackdamage"
+		body: "SetAttackDamage(${1:Owner akOwner}, ${2:int damage})${0}"
+	"InstanceData.GetDamageTypes":
+		prefix: "getdamagetypes"
+		body: "GetDamageTypes(${1:Owner akOwner})${0}"
+	"InstanceData.SetDamageTypes":
+		prefix: "setdamagetypes"
+		body: "SetDamageTypes(${1:Owner akOwner}, ${2:DamageTypeInfo[] dts})${0}"
+	"InstanceData.GetAmmoCapacity":
+		prefix: "getammocapacity"
+		body: "GetAmmoCapacity(${1:Owner akOwner})${0}"
+	"InstanceData.SetAmmoCapacity":
+		prefix: "setammocapacity"
+		body: "SetAmmoCapacity(${1:Owner akOwner}, ${2:int capacity})${0}"
+	"InstanceData.GetAmmo":
+		prefix: "getammo"
+		body: "GetAmmo(${1:Owner akOwner})${0}"
+	"InstanceData.SetAmmo":
+		prefix: "setammo"
+		body: "SetAmmo(${1:Owner akOwner}, ${2:Ammo akAmmo})${0}"
+	"InstanceData.GetAccuracyBonus":
+		prefix: "getaccuracybonus"
+		body: "GetAccuracyBonus(${1:Owner akOwner})${0}"
+	"InstanceData.SetAccuracyBonus":
+		prefix: "setaccuracybonus"
+		body: "SetAccuracyBonus(${1:Owner akOwner}, ${2:int bonus})${0}"
+	"InstanceData.GetActionPointCost":
+		prefix: "getactionpointcost"
+		body: "GetActionPointCost(${1:Owner akOwner})${0}"
+	"InstanceData.SetActionPointCost":
+		prefix: "setactionpointcost"
+		body: "SetActionPointCost(${1:Owner akOwner}, ${2:float cost})${0}"
+	"InstanceData.GetAttackDelay":
+		prefix: "getattackdelay"
+		body: "GetAttackDelay(${1:Owner akOwner})${0}"
+	"InstanceData.SetAttackDelay":
+		prefix: "setattackdelay"
+		body: "SetAttackDelay(${1:Owner akOwner}, ${2:float cost})${0}"
+	"InstanceData.GetOutOfRangeMultiplier":
+		prefix: "getoutofrangemultiplier"
+		body: "GetOutOfRangeMultiplier(${1:Owner akOwner})${0}"
+	"InstanceData.SetOutOfRangeMultiplier":
+		prefix: "setoutofrangemultiplier"
+		body: "SetOutOfRangeMultiplier(${1:Owner akOwner}, ${2:float mult})${0}"
+	"InstanceData.GetReloadSpeed":
+		prefix: "getreloadspeed"
+		body: "GetReloadSpeed(${1:Owner akOwner})${0}"
+	"InstanceData.SetReloadSpeed":
+		prefix: "setreloadspeed"
+		body: "SetReloadSpeed(${1:Owner akOwner}, ${2:float speed})${0}"
+	"InstanceData.GetReach":
+		prefix: "getreach"
+		body: "GetReach(${1:Owner akOwner})${0}"
+	"InstanceData.SetReach":
+		prefix: "setreach"
+		body: "SetReach(${1:Owner akOwner}, ${2:float reach})${0}"
+	"InstanceData.GetMinRange":
+		prefix: "getminrange"
+		body: "GetMinRange(${1:Owner akOwner})${0}"
+	"InstanceData.SetMinRange":
+		prefix: "setminrange"
+		body: "SetMinRange(${1:Owner akOwner}, ${2:float minRange})${0}"
+	"InstanceData.GetMaxRange":
+		prefix: "getmaxrange"
+		body: "GetMaxRange(${1:Owner akOwner})${0}"
+	"InstanceData.SetMaxRange":
+		prefix: "setmaxrange"
+		body: "SetMaxRange(${1:Owner akOwner}, ${2:float maxRange})${0}"
+	"InstanceData.GetSpeed":
+		prefix: "getspeed"
+		body: "GetSpeed(${1:Owner akOwner})${0}"
+	"InstanceData.SetSpeed":
+		prefix: "setspeed"
+		body: "SetSpeed(${1:Owner akOwner}, ${2:float speed})${0}"
+	"InstanceData.GetStagger":
+		prefix: "getstagger"
+		body: "GetStagger(${1:Owner akOwner})${0}"
+	"InstanceData.SetStagger":
+		prefix: "setstagger"
+		body: "SetStagger(${1:Owner akOwner}, ${2:int stagger})${0}"
+	"InstanceData.GetSkill":
+		prefix: "getskill"
+		body: "GetSkill(${1:Owner akOwner})${0}"
+	"InstanceData.SetSkill":
+		prefix: "setskill"
+		body: "SetSkill(${1:Owner akOwner}, ${2:ActorValue skill})${0}"
+	"InstanceData.GetResist":
+		prefix: "getresist"
+		body: "GetResist(${1:Owner akOwner})${0}"
+	"InstanceData.SetResist":
+		prefix: "setresist"
+		body: "SetResist(${1:Owner akOwner}, ${2:ActorValue resist})${0}"
+	"InstanceData.GetCritMultiplier":
+		prefix: "getcritmultiplier"
+		body: "GetCritMultiplier(${1:Owner akOwner})${0}"
+	"InstanceData.SetCritMultiplier":
+		prefix: "setcritmultiplier"
+		body: "SetCritMultiplier(${1:Owner akOwner}, ${2:float crit})${0}"
+	"InstanceData.GetCritChargeBonus":
+		prefix: "getcritchargebonus"
+		body: "GetCritChargeBonus(${1:Owner akOwner})${0}"
+	"InstanceData.SetCritChargeBonus":
+		prefix: "setcritchargebonus"
+		body: "SetCritChargeBonus(${1:Owner akOwner}, ${2:float bonus})${0}"
+	"InstanceData.GetProjectileOverride":
+		prefix: "getprojectileoverride"
+		body: "GetProjectileOverride(${1:Owner akOwner})${0}"
+	"InstanceData.SetProjectileOverride":
+		prefix: "setprojectileoverride"
+		body: "SetProjectileOverride(${1:Owner akOwner}, ${2:Projectile proj})${0}"
+	"InstanceData.GetNumProjectiles":
+		prefix: "getnumprojectiles"
+		body: "GetNumProjectiles(${1:Owner akOwner})${0}"
+	"InstanceData.SetNumProjectiles":
+		prefix: "setnumprojectiles"
+		body: "SetNumProjectiles(${1:Owner akOwner}, ${2:int numProj})${0}"
+	"InstanceData.GetSightedTransition":
+		prefix: "getsightedtransition"
+		body: "GetSightedTransition(${1:Owner akOwner})${0}"
+	"InstanceData.SetSightedTransition":
+		prefix: "setsightedtransition"
+		body: "SetSightedTransition(${1:Owner akOwner}, ${2:float seconds})${0}"
+	"InstanceData.GetFlag":
+		prefix: "getflag"
+		body: "GetFlag(${1:Owner akOwner, ${2:int flag}})${0}"
+	"InstanceData.SetFlag":
+		prefix: "setflag"
+		body: "SetFlag(${1:Owner akOwner}, ${2:int flag}, ${3:bool set})${0}"
+	"Input.GetMappedKey":
+		prefix: "getmappedkey"
+		body: "Input.GetMappedKey(${1:string control}, ${2:int deviceType = 0xFF})${0}"
+	"Input.GetMappedControl":
+		prefix: "getmappedcontrol"
+		body: "Input.GetMappedControl(${1:int keycode})${0}"
+	"HeadPart.GetType":
+		prefix: "gettype"
+		body: "GetType()${0}"
+	"HeadPart.GetExtraParts":
+		prefix: "getextraparts"
+		body: "GetExtraParts()${0}"
+	"HeadPart.HasExtraPart":
+		prefix: "hasextrapart"
+		body: "HasExtraPart(${1:HeadPart p})${0}"
+	"HeadPart.IsExtraPart":
+		prefix: "isextrapart"
+		body: "IsExtraPart()${0}"
+	"HeadPart.GetValidRaces":
+		prefix: "getvalidraces"
+		body: "GetValidRaces()${0}"
+	"HeadPart.SetValidRaces":
+		prefix: "setvalidraces"
+		body: "SetValidRaces(${1:FormList vRaces})${0}"
+	"Game.GetCurrentConsoleRef":
+		prefix: "getcurrentconsoleref"
+		body: "Game.GetCurrentConsoleRef()${0}"
+	"Game.GetInstalledPlugins":
+		prefix: "getinstalledplugins"
+		body: "Game.GetInstalledPlugins()${0}"
+	"Game.GetPluginDependencies":
+		prefix: "getplugindependencies"
+		body: "Game.GetPluginDependencies(${1:string plugin})${0}"
+	"Game.SetGameSettingFloat":
+		prefix: "setgamesettingfloat"
+		body: "Game.SetGameSettingFloat(${1:string setting}, ${2:float value})${0}"
+	"Game.SetGameSettingInt":
+		prefix: "setgamesettingint"
+		body: "Game.SetGameSettingInt(${1:string setting}, ${2:int value})${0}"
+	"Game.SetGameSettingBool":
+		prefix: "setgamesettingbool"
+		body: "Game.SetGameSettingBool(${1:string setting}, ${2:bool value})${0}"
+	"Game.SetGameSettingString":
+		prefix: "setgamesettingstring"
+		body: "Game.SetGameSettingString(${1:string setting}, ${2:string value})${0}"
+	"Form.GetName":
+		prefix: "getname"
+		body: "GetName()${0}"
+	"Form.SetName":
+		prefix: "setname"
+		body: "SetName(${1:string name})${0}"
+	"Form.GetDescription":
+		prefix: "getdescription"
+		body: "GetDescription()${0}"
+	"Form.GetWeight":
+		prefix: "getweight"
+		body: "GetWeight()${0}"
+	"Form.SetWeight":
+		prefix: "setweight"
+		body: "SetWeight(${1:float weight})${0}"
+	"Form.SetGoldValue":
+		prefix: "setgoldvalue"
+		body: "SetGoldValue(${1:int value})${0}"
+	"Form.GetKeywords":
+		prefix: "getkeywords"
+		body: "GetKeywords()${0}"
+	"Form.HasWorldModel":
+		prefix: "hasworldmodel"
+		body: "HasWorldModel()${0}"
+	"Form.GetWorldModelPath":
+		prefix: "getworldmodelpath"
+		body: "GetWorldModelPath()${0}"
+	"Form.SetWorldModelPath":
+		prefix: "setworldmodelpath"
+		body: "SetWorldModelPath(${1:string path})${0}"
+	"Form.GetIconPath":
+		prefix: "geticonpath"
+		body: "GetIconPath()${0}"
+	"Form.SetIconPath":
+		prefix: "seticonpath"
+		body: "SetIconPath(${1:string path})${0}"
+	"Form.GetMessageIconPath":
+		prefix: "getmessageiconpath"
+		body: "GetMessageIconPath()${0}"
+	"Form.SetMessageIconPath":
+		prefix: "setmessageiconpath"
+		body: "SetMessageIconPath(${1:string path})${0}"
+	"Form.GetEnchantment":
+		prefix: "getenchantment"
+		body: "GetEnchantment()${0}"
+	"Form.SetEnchantment":
+		prefix: "setenchantment"
+		body: "SetEnchantment(${1:Enchantment e})${0}"
+	"Form.GetEnchantmentValue":
+		prefix: "getenchantmentvalue"
+		body: "GetEnchantmentValue()${0}"
+	"Form.SetEnchantmentValue":
+		prefix: "setenchantmentvalue"
+		body: "SetEnchantmentValue(${1:int value})${0}"
+	"Form.GetEquipType":
+		prefix: "getequiptype"
+		body: "GetEquipType()${0}"
+	"Form.SetEquipType":
+		prefix: "setequiptype"
+		body: "SetEquipType(${1:EquipSlot type})${0}"
+	"F4SE.GetVersion":
+		prefix: "getversion"
+		body: "F4SE.GetVersion()${0}"
+	"F4SE.GetVersionMinor":
+		prefix: "getversionminor"
+		body: "F4SE.GetVersionMinor()${0}"
+	"F4SE.GetVersionBeta":
+		prefix: "getversionbeta"
+		body: "F4SE.GetVersionBeta()${0}"
+	"F4SE.GetVersionRelease":
+		prefix: "getversionrelease"
+		body: "F4SE.GetVersionRelease()${0}"
+	"F4SE.GetScriptVersionRelease":
+		prefix: "getscriptversionrelease"
+		body: "F4SE.GetScriptVersionRelease()${0}"
+	"F4SE.GetPluginVersion":
+		prefix: "getpluginversion"
+		body: "F4SE.GetPluginVersion(${1:string name})${0}"
+	"EquipSlot.GetParents":
+		prefix: "getparents"
+		body: "GetParents()${0}"
+	"EncounterZone.GetLocation":
+		prefix: "getlocation"
+		body: "GetLocation()${0}"
+	"EncounterZone.SetLocation":
+		prefix: "setlocation"
+		body: "SetLocation(${1:Location akLoc})${0}"
+	"EncounterZone.GetRank":
+		prefix: "getrank"
+		body: "GetRank()${0}"
+	"EncounterZone.SetRank":
+		prefix: "setrank"
+		body: "SetRank(${1:int rank})${0}"
+	"EncounterZone.GetMinLevel":
+		prefix: "getminlevel"
+		body: "GetMinLevel()${0}"
+	"EncounterZone.SetMinLevel":
+		prefix: "setminlevel"
+		body: "SetMinLevel(${1:int level})${0}"
+	"EncounterZone.GetMaxLevel":
+		prefix: "getmaxlevel"
+		body: "GetMaxLevel()${0}"
+	"EncounterZone.SetMaxLevel":
+		prefix: "setmaxlevel"
+		body: "SetMaxLevel(${1:int level})${0}"
+	"EncounterZone.IsNeverResetable":
+		prefix: "isneverresetable"
+		body: "IsNeverResetable()${0}"
+	"EncounterZone.SetNeverResetable":
+		prefix: "setneverresetable"
+		body: "SetNeverResetable(${1:bool resetable})${0}"
+	"EncounterZone.IsWorkshop":
+		prefix: "isworkshop"
+		body: "IsWorkshop()${0}"
+	"EncounterZone.SetWorkshop":
+		prefix: "setworkshop"
+		body: "SetWorkshop(${1:bool ws})${0}"
+	"Cell.GetWaterType":
+		prefix: "getwatertype"
+		body: "GetWaterType()${0}"
+	"ActorBase.GetTemplate":
+		prefix: "gettemplate"
+		body: "GetTemplate(${1:bool bTopMost = true})${0}"
+	"ActorBase.HasHeadPartOverlays":
+		prefix: "hasheadpartoverlays"
+		body: "HasHeadPartOverlays()${0}"
+	"ActorBase.GetHeadParts":
+		prefix: "getheadparts"
+		body: "GetHeadParts(${1:bool bOverlays = false})${0}"
+	"ActorBase.GetOutfit":
+		prefix: "getoutfit"
+		body: "GetOutfit(${1:bool bSleepOutfit = false})${0}"
+	"ActorBase.SetBodyWeight":
+		prefix: "setbodyweight"
+		body: "SetBodyWeight(${1:BodyWeight weight})${0}"
+	"ActorBase.GetBodyWeight":
+		prefix: "getbodyweight"
+		body: "GetBodyWeight()${0}"
+	"Actor.GetWornItem":
+		prefix: "getwornitem"
+		body: "GetWornItem(${1:int slotIndex}, ${2:bool firstPerson = false})${0}"
+	"Actor.GetWornItemMods":
+		prefix: "getwornitemmods"
+		body: "GetWornItemMods(${1:int slotIndex})${0}"
+	"Actor.GetInstanceOwner":
+		prefix: "getinstanceowner"
+		body: "GetInstanceOwner(${1:int slotIndex})${0}"
+	"Actor.QueueUpdate":
+		prefix: "queueupdate"
+		body: "QueueUpdate(${1:bool bDoEquipment = false}, ${2:int flags = 0})${0}"
